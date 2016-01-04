@@ -21,11 +21,22 @@ if(Meteor.isClient) {
                 // # Bind the scope to the current context, and make it a reactive value.
                 $reactive(this).attach($scope);
 
+                this.newParty = {  };
+
                 this.helpers({
                     parties : () => {
-                        return Parties.find({});
+                        return Parties.find({  });
                     }
-                });
+                })
+
+                this.addParty = () => {
+                    Parties.insert(this.newParty);
+                    this.newParty = {  };
+                }
+
+                this.removeParty = (party) => {
+                    Parties.remove({ _id : party._id });
+                }
 
             }
         }
