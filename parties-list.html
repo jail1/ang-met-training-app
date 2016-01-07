@@ -6,9 +6,10 @@
         <label>Description: </label>
         <input type="text" ng-model="partiesList.newParty.description">
         <button ng-click="partiesList.addParty()">Add Party !</button>
+        <p id="error"></p>
     </form>
 
-    <li ng-repeat="party in partiesList.parties">
+    <li ui-sref="partyDetails({ partyId : party._id })" ng-repeat="party in partiesList.parties">
         {{ party.name }}
         <p>{{ party.description }}</p>
         <button ng-click="partiesList.removeParty(party)">X</button>

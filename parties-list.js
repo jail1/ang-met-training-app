@@ -1,13 +1,8 @@
 /**
- * Created by silviu on 1/4/16.
+ * Created by vash-dev on 1/7/16.
  */
 
-Parties = new Mongo.Collection("parties");
-
 if(Meteor.isClient) {
-
-
-    angular.module('socially', ['angular-meteor']);
 
     angular.module('socially').directive('partiesList', partiesList);
 
@@ -24,13 +19,25 @@ if(Meteor.isClient) {
                 this.newParty = {  };
 
                 this.helpers({
-                    parties : () => {
+                        parties : () => {
                         return Parties.find({  });
                     }
                 })
 
                 this.addParty = () => {
-                    Parties.insert(this.newParty);
+                    if(!this.newParty.name || !this.newParty.description) {
+                        angular.element('p#error').html('You need to insert something in both those fields!');
+                        textDiss(3000);
+                        throw new Meteor.Error('You need to insert something in both those fields!');
+                    }
+                    Parties.insert(this.newParty, function(error, result) {
+                        if(error) {
+                            return;
+                        }
+                        angular.element('p#error').html('Item added successfully!');
+                        textDiss(3000);
+                    });
+
                     this.newParty = {  };
                 }
 
@@ -40,6 +47,12 @@ if(Meteor.isClient) {
 
             }
         }
+    }
+
+    function textDiss(time) {
+        Meteor.setTimeout(function() {
+            angular.element('p#error').html('');
+        }, time);
     }
 
 }
