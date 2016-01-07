@@ -19,7 +19,7 @@ if(Meteor.isClient) {
                 this.newParty = {  };
 
                 this.helpers({
-                        parties : () => {
+                    parties : () => {
                         return Parties.find({  });
                     }
                 })
