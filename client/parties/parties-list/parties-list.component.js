@@ -16,11 +16,11 @@ function partiesList () {
 
             this.newParty = {  };
 
-            this.helpers({
-                    parties : () => {
-                    return Parties.find({  });
-        }
-        })
+                    this.helpers({
+                            parties : () => {
+                            return Parties.find({  });
+                }
+            })
 
             this.addParty = () => {
                 if(!this.newParty.name || !this.newParty.description) {
@@ -28,6 +28,11 @@ function partiesList () {
                     textDiss(3000);
                     throw new Meteor.Error('You need to insert something in both those fields!');
                 }
+
+                // # Decorate the newParty object with the current logged in user _id.
+                // # Will use this for permissions later.
+                this.newParty.owner = Meteor.user()._id;
+
                 Parties.insert(this.newParty, function(error, result) {
                     if(error) {
                         return;

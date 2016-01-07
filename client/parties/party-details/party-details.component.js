@@ -14,11 +14,11 @@ angular.module('socially').directive('partyDetails', function() {
             this.helpers({
                     // # Get the parties to be consumed.
                     party: () => {
-                    return Parties.findOne({
-                        _id: $stateParams.partyId
+                        return Parties.findOne({
+                            _id: $stateParams.partyId
                     });
-        }
-        })
+                }
+            })
 
             // # Save changes made to party.
             this.save = () => {
@@ -27,9 +27,9 @@ angular.module('socially').directive('partyDetails', function() {
                         name : this.party.name,
                         description : this.party.description
                     }
-                }, function() {
+                }, function(error) {
                     if(error) {
-                        throw new Meteor.Error('Something happened !');
+                        throw new Meteor.Error('Something happened !', error);
                     }
                     console.info('Party modified with success !');
                 });
