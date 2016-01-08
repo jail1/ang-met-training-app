@@ -2,7 +2,7 @@
  * Created by vash-dev on 1/7/16.
  */
 
-angular.module('socially').directive('partiesList', partiesList);
+    angular.module('socially').directive('partiesList', partiesList);
 
 function partiesList () {
     return {
@@ -16,11 +16,13 @@ function partiesList () {
 
             this.newParty = {  };
 
-                    this.helpers({
-                            parties : () => {
-                            return Parties.find({  });
+            this.helpers({
+                    parties : () => {
+                    return Parties.find({  });
                 }
-            })
+            });
+
+            this.subscribe("parties");
 
             this.addParty = () => {
                 if(!this.newParty.name || !this.newParty.description) {
@@ -42,7 +44,7 @@ function partiesList () {
                 });
 
                 this.newParty = {  };
-            }
+            };
 
             this.removeParty = (party) => {
                 Parties.remove({ _id : party._id });

@@ -4,9 +4,19 @@
 
     Party name :    <input type="text" ng-model="partyDetails.party.name">
     Party details : <input type="text" ng-model="partyDetails.party.description">
+    Public party ? : <input type="checkbox" ng-model="partyDetails.party.public">
 
     <button ng-click="partyDetails.save()">Save Changes</button>
 
 </form>
 
 <button ui-sref="parties">Back to parties</button>
+
+<ul>
+    Users:
+    <li ng-repeat="user in partyDetails.users">
+        <div>
+            {{ user.emails[0].address }}
+        </div>
+    </li>
+</ul>

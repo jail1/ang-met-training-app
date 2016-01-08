@@ -9,23 +9,37 @@ angular.module('socially').directive('partyDetails', function() {
         controllerAs: 'partyDetails',
         controller: function($scope, $stateParams, $reactive) {
 
+            // # Bind the context of this constructor (controller) to the $scope to make a reactive context.
             $reactive(this).attach($scope);
 
+            // # Subscribe to the `users` collection as per the publication.
+            this.subscribe('users');
+            // # Subscribe tot the `parties` collection as per the publication.
+            this.subscribe('parties');
+
             this.helpers({
-                    // # Get the parties to be consumed.
-                    party: () => {
+
+                // # Get the parties to be consumed.
+                party: () => {
                         return Parties.findOne({
                             _id: $stateParams.partyId
                     });
+                },
+
+                // # Get the users with the specified fields data (in the subscribe).
+                users: () => {
+                    return Meteor.users.find();
                 }
-            })
+
+            });
 
             // # Save changes made to party.
             this.save = () => {
                 Parties.update({ _id : $stateParams.partyId }, {
                     $set : {
                         name : this.party.name,
-                        description : this.party.description
+                        description : this.party.description,
+                        'public' : this.party.public
                     }
                 }, function(error) {
                     if(error) {
