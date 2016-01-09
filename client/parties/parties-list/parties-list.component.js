@@ -26,14 +26,30 @@ function partiesListController ($scope, $reactive) {
     this.sort = {
         name : 1
     };
+    this.orderProperty = '1';
+    this.searthText = '';
 
     this.helpers({
+
         parties : () => {
             return Parties.find({  }, {
                 sort : this.getReactively('sort')
             });
+        },
+
+        partiesCount : () => {
+            return Counts.get('numberOfParties');
         }
+
     });
+
+    this.updateSort = () => {
+
+        this.sort = {
+            name: parseInt(this.orderProperty)
+        };
+
+    };
 
     this.subscribe("parties", () => {
         return [
@@ -41,7 +57,8 @@ function partiesListController ($scope, $reactive) {
                 limit: parseInt(this.perPage),
                 skip : parseInt( (this.getReactively('page') -1) * this.perPage ),
                 sort : this.getReactively('sort')
-            }
+            },
+            this.getReactively('searchText')
         ];
     });
 
