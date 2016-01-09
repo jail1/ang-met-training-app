@@ -2,7 +2,7 @@
  * Created by vash-dev on 1/8/16.
  */
 
-Meteor.publish("parties", function() {
+Meteor.publish("parties", function(options) {
     return Parties.find({
        $or : [
            {
@@ -30,5 +30,5 @@ Meteor.publish("parties", function() {
                ]
            }
        ]
-    });
+    }, options);
 });

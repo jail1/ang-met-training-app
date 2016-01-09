@@ -116,6 +116,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/srp/1.0.4/web.browser/biginteger.js" />
         <item url="file://$USER_HOME$/.meteor/packages/srp/1.0.4/web.browser/srp.js" />
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.5.1/web.browser/.npm/package/node_modules/meteor-promise/promise.bundle.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/tmeasday_publish-counts/0.7.3/web.browser/client/publish-counts.js" />
         <item url="file://$USER_HOME$/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
         <item url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.5/web.browser/parse.js" />
         <item url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />
@@ -138,6 +139,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/es5-shim/4.1.14/web.browser/console.js" />
         <item url="file://$USER_HOME$/.meteor/packages/dotansimha_accounts-ui-angular/0.0.2/web.browser/accounts-ui-angular.js" />
         <item url="file://$USER_HOME$/.meteor/packages/dotansimha_accounts-ui-angular/0.0.2/web.browser/login-buttons-directive.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/angularutils_pagination/0.9.1_2/web.browser/dirPagination.js" />
         <item url="file://$USER_HOME$/.meteor/packages/es5-shim/4.1.14/web.browser/.npm/package/node_modules/es5-shim/es5-shim.js" />
         <item url="file://$USER_HOME$/.meteor/packages/jquery/1.11.4/web.browser/jquery.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ddp-rate-limiter/1.0.0/web.browser/ddp-rate-limiter.js" />
@@ -282,6 +284,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.5.1/web.browser/.npm/package/node_modules/meteor-promise/promise.bundle.js" />
       <root url="file://$USER_HOME$/.meteor/packages/srp/1.0.4/web.browser/srp.js" />
       <root url="file://$USER_HOME$/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/tmeasday_publish-counts/0.7.3/web.browser/client/publish-counts.js" />
       <root url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.5/web.browser/parse.js" />
       <root url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.5/web.browser/scanner.js" />
       <root url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />
@@ -304,6 +307,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/dotansimha_accounts-ui-angular/0.0.2/web.browser/accounts-ui-angular.js" />
       <root url="file://$USER_HOME$/.meteor/packages/dotansimha_accounts-ui-angular/0.0.2/web.browser/login-buttons-directive.js" />
       <root url="file://$USER_HOME$/.meteor/packages/es5-shim/4.1.14/web.browser/.npm/package/node_modules/es5-shim/es5-shim.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/angularutils_pagination/0.9.1_2/web.browser/dirPagination.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ddp-rate-limiter/1.0.0/web.browser/ddp-rate-limiter.js" />
       <root url="file://$USER_HOME$/.meteor/packages/jquery/1.11.4/web.browser/jquery.js" />
       <root url="file://$USER_HOME$/.meteor/packages/launch-screen/1.0.4/web.browser/mobile-launch-screen.js" />
