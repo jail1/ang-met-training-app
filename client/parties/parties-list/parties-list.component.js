@@ -51,6 +51,30 @@ function partiesListController ($scope, $reactive) {
 
     };
 
+    this.getPartyCreator = function(party) {
+
+        if (!party) {
+            return '';
+        }
+
+        let owner = Meteor.users.findOne(party.owner);
+
+        if (!owner) {
+            return 'nobody';
+        }
+
+        if (Meteor.userId() !== null && owner._id === Meteor.userId()) {
+            return 'me';
+        }
+
+        return owner;
+
+    };
+
+    // # Handle subscriptions
+
+    this.subscribe("users");
+
     this.subscribe("parties", () => {
         return [
             {

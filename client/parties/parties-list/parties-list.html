@@ -31,10 +31,17 @@
 <ul>
 
     <li ui-sref="partyDetails({ partyId : party._id })"
+
         dir-paginate="party in partiesList.parties | itemsPerPage : partiesList.perPage" total-items="partiesList.partiesCount">
+
         {{ party.name }}
+
         <p>{{ party.description }}</p>
+
         <button ng-click="partiesList.removeParty(party)">X</button>
+
+        <p><small>Posted by {{ partiesList.getPartyCreator(party) | displayName }}</small></p>
+
     </li>
 
     <dir-pagination-controls on-page-change="partiesList.pageChanged(newPageNumber)"></dir-pagination-controls>

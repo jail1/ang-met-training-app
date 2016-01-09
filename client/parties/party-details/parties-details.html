@@ -14,9 +14,9 @@
 
 <ul>
     Users:
-    <li ng-repeat="user in partyDetails.users">
+    <li ng-repeat="user in partyDetails.users | uninvited:partyDetails.party">
         <div>
-            {{ user.emails[0].address }}
+            {{ user | displayName }}
         </div>
     </li>
 </ul>
