@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/server/parties.js" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e48bce64-7904-416e-a0cd-89dbe5211655" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/parties/filters/display-name.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/parties/filters/uninvited.js" />
+    <list default="true" id="e48bce64-7904-416e-a0cd-89dbe5211655" name="Default" comment="l">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/startup/environments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js" afterPath="$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/parties/parties-list/parties-list.html" afterPath="$PROJECT_DIR$/client/parties/parties-list/parties-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/parties/party-details/parties-details.html" afterPath="$PROJECT_DIR$/client/parties/party-details/parties-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/parties/party-details/party-details.component.js" afterPath="$PROJECT_DIR$/client/parties/party-details/party-details.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Parties.js" afterPath="$PROJECT_DIR$/models/Parties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/parties.js" afterPath="$PROJECT_DIR$/server/parties.js" />
     </list>
     <ignored path="socially.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parties-details.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/parties/party-details/parties-details.html">
+      <file leaf-file-name="Parties.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Parties.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parties-list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/parties/parties-list/parties-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71835804">
-              <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,17 +50,27 @@
         <entry file="file://$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="display-name.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/parties/filters/display-name.js">
+      <file leaf-file-name="parties-list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/parties/parties-list/parties-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.46978337">
+              <caret line="56" column="80" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parties-details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/parties/party-details/parties-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -103,18 +111,19 @@
         <option value="$PROJECT_DIR$/server/startup/load-parties.js" />
         <option value="$PROJECT_DIR$/parties-list.js" />
         <option value="$PROJECT_DIR$/parties-details.js" />
-        <option value="$PROJECT_DIR$/models/Parties.js" />
         <option value="$PROJECT_DIR$/client/routes.js" />
         <option value="$PROJECT_DIR$/server/users.js" />
-        <option value="$PROJECT_DIR$/client/parties/party-details/party-details.component.js" />
         <option value="$PROJECT_DIR$/client/lib/app.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/server/parties.js" />
         <option value="$PROJECT_DIR$/client/parties/filters/uninvited.js" />
-        <option value="$PROJECT_DIR$/client/parties/party-details/parties-details.html" />
         <option value="$PROJECT_DIR$/client/parties/filters/display-name.js" />
-        <option value="$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js" />
+        <option value="$PROJECT_DIR$/client/parties/party-details/party-details.component.js" />
+        <option value="$PROJECT_DIR$/client/parties/party-details/parties-details.html" />
         <option value="$PROJECT_DIR$/client/parties/parties-list/parties-list.html" />
+        <option value="$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js" />
+        <option value="$PROJECT_DIR$/server/startup/environments.js" />
+        <option value="$PROJECT_DIR$/server/parties.js" />
+        <option value="$PROJECT_DIR$/models/Parties.js" />
       </list>
     </option>
   </component>
@@ -197,6 +206,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="startup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socially" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ang-met-training-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socially" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ang-met-training-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -260,10 +301,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="parties" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,7 +573,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452359480492</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="-&gt; added filters.&#10;-&gt; created and integrated Angular 1.x filters.&#10;-&gt; can now see who created a certain party.&#10;-&gt; shows email address / username no matter how you created your account.&#10;-&gt; finished Chapter 13 (Using and creating AngularJS filters).">
+      <created>1452360997002</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1452360997002</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -552,10 +595,12 @@
     <frame x="1917" y="0" width="1926" height="1059" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18729989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32105264" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5031546" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.49479166" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.21682848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="5262" y="0" width="498" height="1080" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -566,8 +611,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -590,7 +633,8 @@
     <MESSAGE value="-&gt; Modified project structure extensively. &#10;-&gt; Refactored files. Separated client side files from server side files.&#10;-&gt; Finished Chapter 7 (Folder structure)." />
     <MESSAGE value="-&gt; Added user accounts module.&#10;-&gt; Implemented security for CRUD operations on the Parties Collection.&#10;-&gt; Added OAuth support for Facebook and Twitter (still need to configure the plugin).&#10;-&gt; Added client-side route security for perty editing.&#10;-&gt; Finished Chapter 8 (User accounts, authentication and permissions)." />
     <MESSAGE value="-&gt; added pagination directive.&#10;-&gt; can filter data in the parties collection based on a search term (uses mongo regex).&#10;-&gt; added pagination logic.&#10;-&gt; made pagination options reactive.&#10;-&gt; finished Chapter 12 (Search, sort, pagination and reactive vars)." />
-    <option name="LAST_COMMIT_MESSAGE" value="-&gt; added pagination directive.&#10;-&gt; can filter data in the parties collection based on a search term (uses mongo regex).&#10;-&gt; added pagination logic.&#10;-&gt; made pagination options reactive.&#10;-&gt; finished Chapter 12 (Search, sort, pagination and reactive vars)." />
+    <MESSAGE value="-&gt; added filters.&#10;-&gt; created and integrated Angular 1.x filters.&#10;-&gt; can now see who created a certain party.&#10;-&gt; shows email address / username no matter how you created your account.&#10;-&gt; finished Chapter 13 (Using and creating AngularJS filters)." />
+    <option name="LAST_COMMIT_MESSAGE" value="-&gt; added filters.&#10;-&gt; created and integrated Angular 1.x filters.&#10;-&gt; can now see who created a certain party.&#10;-&gt; shows email address / username no matter how you created your account.&#10;-&gt; finished Chapter 13 (Using and creating AngularJS filters)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,32 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Parties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6671449">
-          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16703786">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/parties/party-details/party-details.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28301886">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/parties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/parties/filters/uninvited.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13318536">
@@ -753,16 +767,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/parties/filters/display-name.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.29966703">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/startup/environments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09988901">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/parties/party-details/parties-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/parties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16648169">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16648169">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/parties/party-details/party-details.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68368477">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Parties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -770,15 +824,15 @@
     <entry file="file://$PROJECT_DIR$/client/parties/parties-list/parties-list.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/parties/parties-list/parties-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71835804">
-          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.46978337">
+          <caret line="56" column="80" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="80" />
           <folding />
         </state>
       </provider>

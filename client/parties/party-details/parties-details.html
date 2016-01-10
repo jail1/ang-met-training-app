@@ -17,6 +17,7 @@
     <li ng-repeat="user in partyDetails.users | uninvited:partyDetails.party">
         <div>
             {{ user | displayName }}
+            <button ng-click="partyDetails.invite(user)">Invite</button>
         </div>
     </li>
 </ul>

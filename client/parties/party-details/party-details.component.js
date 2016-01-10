@@ -53,6 +53,18 @@ function partyDetailsController ($scope, $stateParams, $reactive) {
             }
             console.info('Party modified with success !');
         });
-    }
+    };
+
+    this.invite = ( user ) => {
+
+        Meteor.call('invite', this.party._id, user._id, ( error, newParty ) => {
+            if(error) {
+                console.log('Oops, unable to invite !', error);
+            } else {
+                console.log('Invited ! New party is: ', newParty);
+            }
+        });
+
+    };
 
 }

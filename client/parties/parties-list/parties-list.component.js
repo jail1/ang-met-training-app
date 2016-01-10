@@ -39,6 +39,10 @@ function partiesListController ($scope, $reactive) {
 
         partiesCount : () => {
             return Counts.get('numberOfParties');
+        },
+
+        users : () => {
+            return Meteor.users.find({});
         }
 
     });
@@ -69,6 +73,28 @@ function partiesListController ($scope, $reactive) {
 
         return owner;
 
+    };
+
+    this.rsvp = ( partyId, rsvp ) => {
+
+        Meteor.call('rsvp', partyId, rsvp, ( error ) => {
+            if(error) {
+                console.log('Oops ! Unable to rsvp !');
+            } else {
+                console.log('RSVP Done !');
+            }
+        });
+
+    };
+
+    this.getUserById = ( userId ) => {
+        return Meteor.users.findOne(userId);
+    };
+
+    this.outstandingInvitations = ( party ) => {
+        return _.filter(this.users, ( user ) => {
+            return (_.contains(party.invited, user._id) && !_.findWhere(party.rsvps, { user : user._id }) );
+        });
     };
 
     // # Handle subscriptions

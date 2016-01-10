@@ -36,6 +36,18 @@ Meteor.publish("parties", function(options, searchString) {
                         }
                     }
                 ]
+            },
+            {
+                $and : [
+                    {
+                        invited : this.userId
+                    },
+                    {
+                        invited : {
+                            $exists : true
+                        }
+                    }
+                ]
             }
         ]
     };

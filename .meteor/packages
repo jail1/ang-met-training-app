@@ -22,3 +22,7 @@ accounts-facebook
 accounts-twitter
 angularutils:pagination
 tmeasday:publish-counts
+check
+email
+nimble:restivus
+simple:rest
