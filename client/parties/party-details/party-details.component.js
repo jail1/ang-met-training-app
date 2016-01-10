@@ -35,6 +35,11 @@ function partyDetailsController ($scope, $stateParams, $reactive) {
         // # Get the users with the specified fields data (in the subscribe).
         users: () => {
             return Meteor.users.find();
+        },
+
+        // # Return true if the user performing an action is logged in.
+        isLoggedIn : () => {
+            return Meteor.userId() !== null;
         }
 
     });
@@ -56,7 +61,6 @@ function partyDetailsController ($scope, $stateParams, $reactive) {
     };
 
     this.invite = ( user ) => {
-
         Meteor.call('invite', this.party._id, user._id, ( error, newParty ) => {
             if(error) {
                 console.log('Oops, unable to invite !', error);
@@ -64,7 +68,13 @@ function partyDetailsController ($scope, $stateParams, $reactive) {
                 console.log('Invited ! New party is: ', newParty);
             }
         });
+    };
 
+    this.canInvite = () => {
+        if ( !this.party )
+            return this.false;
+
+        return !this.party.public && this.party.owner === Meteor.userId();
     };
 
 }

@@ -2,9 +2,9 @@
 
 <form>
 
-    Party name :    <input type="text" ng-model="partyDetails.party.name">
-    Party details : <input type="text" ng-model="partyDetails.party.description">
-    Public party ? : <input type="checkbox" ng-model="partyDetails.party.public">
+    Party name :    <input type="text" ng-model="partyDetails.party.name" placeholder="{{ partyDetails.isLoggedIn ? partyDetails.party.name : 'You need to be logged in in order to perform changes here...'  }}" ng-disabled="!partyDetails.isLoggedIn">
+    Party details : <input type="text" ng-model="partyDetails.party.description" placeholder="{{ partyDetails.isLoggedIn ? partyDetails.party.description : 'You need to be logged in in order to perform changes here...'  }}" ng-disabled="!partyDetails.isLoggedIn">
+    Public party ? : <input type="checkbox" ng-model="partyDetails.party.public" placeholder="{{ partyDetails.isLoggedIn ? partyDetails.party.public : 'You need to be logged in in order to perform changes here...'  }}" ng-disabled="!partyDetails.isLoggedIn">
 
     <button ng-click="partyDetails.save()">Save Changes</button>
 
@@ -12,12 +12,15 @@
 
 <button ui-sref="parties">Back to parties</button>
 
-<ul>
-    Users:
+<ul ng-show="partyDetails.canInvite()">
+    Users to invite:
     <li ng-repeat="user in partyDetails.users | uninvited:partyDetails.party">
         <div>
             {{ user | displayName }}
             <button ng-click="partyDetails.invite(user)">Invite</button>
         </div>
+    </li>
+    <li ng-if="(partyDetails.users | uninvited:partyDetails.party).length <= 0">
+        Everyone is already invited !
     </li>
 </ul>

@@ -43,6 +43,14 @@ function partiesListController ($scope, $reactive) {
 
         users : () => {
             return Meteor.users.find({});
+        },
+
+        isLoggedIn : () => {
+            return Meteor.userId() !== null;
+        },
+
+        currentUserId : () => {
+            return Meteor.userId();
         }
 
     });

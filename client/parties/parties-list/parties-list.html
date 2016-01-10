@@ -1,4 +1,6 @@
-<form>
+<!-- Hide the follow if the use is NOT logged in. -->
+
+<form ng-show="partiesList.isLoggedIn">
 
     <label>Party Name: </label>
     <input type="text" ng-model="partiesList.newParty.name">
@@ -14,6 +16,14 @@
     <p id="error"></p>
 
 </form>
+
+<!-- Show the following only if the user is NOT logged in. -->
+
+<div ng-hide="partiesList.isLoggedIn">
+
+    Log in to create a party !
+
+</div>
 
 <h1>Parties:</h1>
 
@@ -38,15 +48,27 @@
 
         <p>{{ party.description }}</p>
 
-        <button ng-click="partiesList.removeParty(party)">X</button>
+        <button ng-show="partiesList.isLoggedIn && party.owner == partiesList.currentUserId" ng-click="partiesList.removeParty(party)">X</button>
 
-        <div>
+        <!-- Hide the follow if the user is NOT logged in. -->
+
+        <div ng-show="partiesList.isLoggedIn">
 
             <input type="button" value="I'm going !" ng-click="partiesList.rsvp(party._id, 'yes')">
             <input type="button" value="Maybe !" ng-click="partiesList.rsvp(party._id, 'maybe')">
             <input type="button" value="No" ng-click="partiesList.rsvp(party._id, 'no')">
 
         </div>
+
+        <!-- Show the following if the user is NOT logged in. -->
+
+        <div ng-hide="partiesList.isLoggedIn">
+
+            <i>Sign in to RSVP for this party !</i>
+
+        </div>
+
+        <!-- /### -->
 
         <div>
             Who is coming:
@@ -64,7 +86,7 @@
             </div>
         </div>
 
-        <ul>
+        <ul ng-if="!party.public">
             Users who did not respond:
             <li ng-repeat="invitedUser in partiesList.outstandingInvitations(party)">
                 {{ invitedUser | displayName }}
